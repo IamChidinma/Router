@@ -1,0 +1,67 @@
+.Container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+}
+
+.Box {
+  width: 360px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.Box h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.Box input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+.Btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff9a9e, #fecfef);
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.Btn:hover {
+  background: linear-gradient(135deg, #fecfef, #ff9a9e);
+  transform: translateY(-2px);
+}
+
+.Links {
+  margin-top: 15px;
+}
+
+.Links a {
+  color: #444;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.Links a:hover {
+  color: #ff4081;
+}
