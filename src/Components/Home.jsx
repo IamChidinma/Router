@@ -3,17 +3,16 @@ import "../Styles/Home.css";
 
 const Home = () => {
   return (
-    <div className="homeContainer">
-      <div className="mini_container">
-        <img
-          src="https://i.pravatar.cc/100"
-          alt="User Avatar"
-          className="picture"
-        />
-        <h1>Welcome Back 🎉</h1>
-        <p>You are logged in successfully!</p>
-
-        <button className="logoutBtn">Logout</button>
+    <div className="home">
+      <div className="hero">
+        <div className="glass-card">
+          <h1>🍔 Welcome Home</h1>
+          <p>
+            Discover tasty recipes and explore delicious meals made just for
+            you.
+          </p>
+          <button className="explore-btn">Explore Food</button>
+        </div>
       </div>
     </div>
   );

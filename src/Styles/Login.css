@@ -1,74 +1,95 @@
-.Container {
-  height: 100vh;
+.login-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-}
-
-.Box {
-  width: 360px;
-  padding: 30px;
-  border-radius: 15px;
-  background: rgba(20, 20, 20, 0.8);
-  box-shadow: 0 0 15px rgba(0, 255, 200, 0.4);
-  text-align: center;
-}
-
-.Box h2 {
-  color: #00ffcc;
-  margin-bottom: 20px;
+  width: 850px;
+  max-width: 95%;
+  height: 500px;
+  margin: auto;
+  margin-top: 5vh;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
   font-family: "Poppins", sans-serif;
 }
 
-.Box input {
-  width: 100%;
-  margin: 10px 0;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #00ffcc;
-  background: transparent;
+.login-left {
+  width: 50%;
+  background: url("https://images.unsplash.com/photo-1518779578993-ec3579fee39f");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
   color: #fff;
-  font-size: 14px;
-}
-
-.Box input::placeholder {
-  color: #aaa;
-}
-
-.Btn {
-  width: 100%;
-  padding: 12px;
-  margin-top: 15px;
-  border-radius: 25px;
-  border: none;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-  background: #00ffcc;
-  color: #000;
-  transition: 0.3s ease;
-}
-
-.Btn:hover {
-  background: #00e6b3;
-  transform: translateY(-2px);
-}
-
-.Links {
-  margin-top: 15px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
-.Links a {
-  color: #00ffcc;
-  font-size: 13px;
+.login-right {
+  width: 50%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 30px;
+}
+
+.login-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.forgot {
+  font-size: 12px;
+  color: #007acc;
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  background: #00bcd4;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn a {
+  color: white;
   text-decoration: none;
 }
+.login-btn:hover {
+  background: #0097a7;
+}
 
-.Links a:hover {
+.switch {
+  font-size: 13px;
+  margin-top: 10px;
+}
+.switch a {
+  color: #007acc;
+  text-decoration: none;
+}
+.switch a:hover {
   text-decoration: underline;
 }
