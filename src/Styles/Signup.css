@@ -1,4 +1,4 @@
-.signup-container {
+/* .signup-container {
   display: flex;
   width: 850px;
   max-width: 95%;
@@ -20,7 +20,7 @@
 }
 
 .signup-left .overlay {
-  /* background: rgba(0, 0, 0, 0.6); */
+  background: rgba(0, 0, 0, 0.6);
   height: 100%;
   color: #fff;
   display: flex;
@@ -92,6 +92,134 @@
   color: #007acc;
   text-decoration: none;
 }
+.switch a:hover {
+  text-decoration: underline;
+} */
+.signup-container {
+  display: flex;
+  width: 850px;
+  max-width: 95%;
+  height: 500px;
+  margin: auto;
+  margin-top: 5vh;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+}
+
+.signup-left {
+  width: 45%;
+  background: url("https://images.unsplash.com/photo-1550547660-d9450f859349");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.signup-left .overlay {
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.signup-right {
+  width: 50%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 30px;
+}
+
+.signup-right h2 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.signup-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.signup-input:focus {
+  border: 1px solid #00bcd4;
+}
+
+.signup-input.error {
+  border: 1px solid red;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  align-self: flex-start;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+.terms {
+  font-size: 12px;
+  align-self: flex-start;
+}
+
+.terms a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+.signup-btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  background: #00bcd4;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.signup-btn:hover {
+  background: #0097a7;
+}
+
+.signup-btn:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+.switch {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.switch a {
+  color: #007acc;
+  text-decoration: none;
+}
+
 .switch a:hover {
   text-decoration: underline;
 }
